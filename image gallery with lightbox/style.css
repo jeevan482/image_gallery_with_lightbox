@@ -1,0 +1,44 @@
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.95);
+  text-align: center;
+  overflow: hidden;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 80vh;
+  margin-top: 5vh;
+}
+
+.close, .prev, .next {
+  color: white;
+  position: absolute;
+  font-size: 2em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.close {
+  top: 20px;
+  right: 30px;
+}
+
+.prev, .next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev { left: 30px; }
+.next { right: 30px; }
+
+.caption {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
